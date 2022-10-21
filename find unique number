@@ -1,0 +1,20 @@
+// we have given an array and many alements twice and one element occur once so find that element 
+
+#include <iostream>
+using namespace std;
+
+
+int findUnique(int arr[],int n)
+{   int ans=0;
+    for(int i=0;i<n;i++)
+    {
+        ans=ans^arr[i];
+    }
+    return ans;
+}
+
+int main(){
+    int even[7]={2,3,4,4,2,3,1};
+   cout<<findUnique(even,7);
+
+}
